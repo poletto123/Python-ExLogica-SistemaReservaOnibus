@@ -7,7 +7,7 @@ def menu():
 
 def venderPoltrona():
     numero = int(input("Qual é o número da poltrona? (1 - 24) \n"))
-    poltrona = input("Deseja vender a janela da JANELA ou CORREDOR? (J/C) \n").upper()
+    poltrona = input("Deseja vender a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
 
     numero -= 1
 
@@ -31,7 +31,7 @@ def venderPoltrona():
 
 def cancelarCompra():
     numero = int(input("Qual é o número da poltrona? (1 - 24) \n"))
-    poltrona = input("Deseja vender a janela da JANELA ou CORREDOR? (J/C) \n").upper()
+    poltrona = input("Deseja cancelar a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
 
     numero -= 1
 
