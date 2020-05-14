@@ -1,11 +1,14 @@
 import sys
 from EntregaCTP.Funcoes import *
 
-opcao = menu()
+continuar = True
 
-while opcao >= 0 or opcao < 0:
+while continuar == True:
+
+    opcao = menu()
+
     if opcao == 1:
-        soma = sum(janela + corredor)
+        soma = sum(listaJanela + listaCorredor)
 
         if soma == 48:
             print("Ônibus lotado. Opção inválida!")
@@ -13,7 +16,7 @@ while opcao >= 0 or opcao < 0:
             venderPoltrona()
 
     if opcao == 2:
-        soma = sum(janela + corredor)
+        soma = sum(listaJanela + listaCorredor)
 
         if soma == 0:
             print("Todas as poltronas estão livres. Opção inválida!")
@@ -24,9 +27,4 @@ while opcao >= 0 or opcao < 0:
         mostrarLugares()
 
     if opcao == 4:
-        sys.exit()
-
-    if opcao != 1 and opcao != 2 and opcao != 3 and opcao != 4:
-        print("\nDigite um valor entre 1 e 4\n")
-
-    opcao = menu()
+        continuar = False

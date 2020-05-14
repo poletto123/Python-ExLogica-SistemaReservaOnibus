@@ -1,53 +1,59 @@
-janela = list([0]*24) # 24
-corredor = list([0]*24) # 24
+listaJanela = list([0]*24) # 24 lugares
+listaCorredor = list([0]*24) # 24 lugares
 
 def menu():
     escolha = int(input("1 - Vender Passagem \n2 - Cancelar Compra \n3 - Mostrar Mapa de Ocupação \n4 - Sair \n"))
+    while escolha != 1 and escolha != 2 and escolha != 3 and escolha != 4:
+        print("\nDigite um valor entre 1 e 4\n")
+        escolha = int(input("1 - Vender Passagem \n2 - Cancelar Compra \n3 - Mostrar Mapa de Ocupação \n4 - Sair \n"))
     return escolha
 
+def numeroPoltrona():
+    numeroPoltrona = int(input("Qual é o número da poltrona? (1 - 24) \n")) - 1
+    while numeroPoltrona < 0 or numeroPoltrona > 23:
+        print("Opção inválida. Digite um número de 1 a 24")
+        numeroPoltrona = int(input("Qual é o número da poltrona? (1 - 24) \n")) -1
+    return numeroPoltrona
+
+def janelaCorredor():
+    janelaCorredor = input("Deseja a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
+    while janelaCorredor not in ["J", "C"]:
+        print("Opção inválida. Digite J ou C")
+        janelaCorredor = input("Deseja a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
+    return janelaCorredor
+
 def venderPoltrona():
-    numero = int(input("Qual é o número da poltrona? (1 - 24) \n"))
-    poltrona = input("Deseja vender a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
+    numPoltrona = numeroPoltrona()
+    janCorredor = janelaCorredor()
 
-    numero -= 1
-
-    if poltrona == "C":
-        if corredor[numero] == 0:
-
-            corredor[numero] = 1
-            print("\nVenda realizada com sucesso!")
-
+    if janCorredor == "C":
+        if listaCorredor[numPoltrona] == 0:
+            listaCorredor[numPoltrona] = 1
+            print("\nVenda realizada com sucesso!\n")
         else:
             print("\nPoltrona ocupada. Venda não realizada!\n")
 
-    if poltrona == "J":
-        if janela[numero] == 0:
-
-            janela[numero] = 1
-            print("\nVenda realizada com sucesso!")
-
+    if janCorredor == "J":
+        if listaJanela[numPoltrona] == 0:
+            listaJanela[numPoltrona] = 1
+            print("\nVenda realizada com sucesso!\n")
         else:
             print("\nPoltrona ocupada. Venda não realizada!\n")
 
 def cancelarCompra():
-    numero = int(input("Qual é o número da poltrona? (1 - 24) \n"))
-    poltrona = input("Deseja cancelar a poltrona da JANELA ou CORREDOR? (J/C) \n").upper()
+    numPoltrona = numeroPoltrona()
+    janCorredor = janelaCorredor()
 
-    numero -= 1
-
-    if poltrona == "J":
-        if janela[numero] == 1:
-
-            janela[numero] = 0
-            print("\nCompra cancelada com sucesso!")
-
+    if janCorredor == "J":
+        if listaJanela[numPoltrona] == 1:
+            listaJanela[numPoltrona] = 0
+            print("\nCompra cancelada com sucesso!\n")
         else:
-
             print("\nPoltrona livre. Compra não cancelada!\n")
 
-    if poltrona == "C":
-        if corredor[numero] == 1:
-            corredor[numero] = 0
+    if janCorredor == "C":
+        if listaCorredor[numPoltrona] == 1:
+            listaCorredor[numPoltrona] = 0
             print("\nCompra cancelada com sucesso!")
         else:
             print("\nPoltrona livre. Compra não cancelada!\n")
@@ -56,13 +62,13 @@ def mostrarLugares():
     print("\nJANELA:            ", end="")
     print("CORREDOR: ")
 
-    for x in range(len(janela)):
-        if janela[x] == 0:
+    for x in range(len(listaJanela)):
+        if listaJanela[x] == 0:
             print((x + 1), " - ", "Livre  ", end="")
         else:
             print((x + 1), " - ", "Ocupada", end="")
 
-        if corredor[x] == 0:
+        if listaCorredor[x] == 0:
             print("     ", (x + 1), " - ", "Livre")
         else:
             print("     ", (x + 1), " - ", "Ocupada")
