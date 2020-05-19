@@ -14,7 +14,7 @@ def mostrarMenu():
     return int(opcao)
 
 def numeroPoltrona():
-    numeroPoltrona = int(input("Qual o número da poltrona desejada? De 1 a 24")) - 1
+    numeroPoltrona = int(input("Qual o número da poltrona desejada? De 1 a 24\n")) - 1
     while 24 < numeroPoltrona < 1:
         print("Opção inválida\n")
         numeroPoltrona = numeroPoltrona()
@@ -55,14 +55,12 @@ while continuar == True:
         if numPoltronasDisponiveisJanela == 0 and numPoltronasDisponiveisCorredor == 0:
             print("Ônibus lotado. Opção inválida!")
         else:
-            corredorPoltrona = corredorPoltrona()
-            numeroPoltrona = numeroPoltrona()
-            if corredorPoltrona == 1:
-                if listaCorredor[numeroPoltrona] == (numeroPoltrona, True):
-                    print("Poltrona ocupada. Venda não realizada!")
+            corredorPol = corredorPoltrona()
+            numeroPol = numeroPoltrona()
+            if corredorPol == 1:
+                if listaCorredor[numeroPol] == (numeroPol, True):
+                    print("Poltrona ocupada. Venda não realizada!\n")
                 else:
-                    listaCorredor[numeroPoltrona] = [numeroPoltrona, True]
-                    print("Venda realizada com sucesso!")
-
-
+                    listaCorredor[numeroPol] = [numeroPol, True]
+                    print("Venda realizada com sucesso!\n")
 
