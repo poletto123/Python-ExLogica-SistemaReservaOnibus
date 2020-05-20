@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6675673b-1ad7-4039-aa03-536df1213f7d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/asd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/avaliacao2logica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/avaliacao2logica.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Avaliacao_2_1TDST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Avaliacao_2_1TDST.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avaliacao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacao2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,6 +124,8 @@
       <workItem from="1589645942311" duration="615000" />
       <workItem from="1589896080328" duration="3831000" />
       <workItem from="1589918348573" duration="605000" />
+      <workItem from="1589919102115" duration="739000" />
+      <workItem from="1589993422175" duration="3479000" />
     </task>
     <servers />
   </component>
@@ -133,38 +141,46 @@
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
     <state x="778" y="400" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589472629018" />
-    <state width="1874" height="210" key="GridCell.Tab.0.bottom" timestamp="1589910296575">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.0.bottom" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589910296575" />
-    <state width="1874" height="210" key="GridCell.Tab.0.center" timestamp="1589910296575">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.0.bottom/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.0.center" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="210" key="GridCell.Tab.0.center/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589910296575" />
-    <state width="1874" height="210" key="GridCell.Tab.0.left" timestamp="1589910296575">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.0.center/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.0.left" timestamp="1589996875166">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="210" key="GridCell.Tab.0.left/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589910296575" />
-    <state width="1874" height="210" key="GridCell.Tab.0.right" timestamp="1589910296575">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.0.left/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875166" />
+    <state width="1874" height="335" key="GridCell.Tab.0.right" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="210" key="GridCell.Tab.0.right/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589910296575" />
-    <state width="1874" height="329" key="GridCell.Tab.1.bottom" timestamp="1589486674121">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.0.right/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.1.bottom" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589486674121" />
-    <state width="1874" height="329" key="GridCell.Tab.1.center" timestamp="1589486674121">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.1.bottom/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.1.center" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="329" key="GridCell.Tab.1.center/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589486674121" />
-    <state width="1874" height="329" key="GridCell.Tab.1.left" timestamp="1589486674121">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.1.center/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.1.left" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="329" key="GridCell.Tab.1.left/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589486674121" />
-    <state width="1874" height="329" key="GridCell.Tab.1.right" timestamp="1589486674121">
-      <screen x="0" y="0" width="1920" height="1016" />
+    <state width="1874" height="335" key="GridCell.Tab.1.left/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
+    <state width="1874" height="335" key="GridCell.Tab.1.right" timestamp="1589996875167">
+      <screen x="0" y="0" width="1920" height="1029" />
     </state>
     <state width="1874" height="329" key="GridCell.Tab.1.right/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589486674121" />
+    <state width="1874" height="335" key="GridCell.Tab.1.right/0.0.1920.1029/1920.0.1920.1080@0.0.1920.1029" timestamp="1589996875167" />
     <state x="1119" y="252" key="refactoring.ChangeSignatureDialog" timestamp="1589472639508">
       <screen x="0" y="0" width="1920" height="1016" />
     </state>
@@ -174,10 +190,31 @@
     </state>
     <state x="623" y="224" width="672" height="678" key="search.everywhere.popup/0.0.1920.1016/1919.0.1920.1080@0.0.1920.1016" timestamp="1589471373597" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/avaliacao2.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/avaliacao2.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/avaliacao2.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/avaliacao2logica$Foguete__1_.coverage" NAME="Foguete (1) Coverage Results" MODIFIED="1589487979216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntregaCTP" />
     <SUITE FILE_PATH="coverage/avaliacao2logica$Foguete.coverage" NAME="Foguete Coverage Results" MODIFIED="1589464817380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/avaliacao2logica$avaliacao2.coverage" NAME="avaliacao2 Coverage Results" MODIFIED="1589910296555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/avaliacao2logica$avaliacao2.coverage" NAME="avaliacao2 Coverage Results" MODIFIED="1589996875145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/avaliacao2logica$Funcoes.coverage" NAME="Funcoes Coverage Results" MODIFIED="1589470818456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/EntregaCTP" />
   </component>
 </project>

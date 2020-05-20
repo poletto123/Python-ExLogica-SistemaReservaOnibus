@@ -29,38 +29,97 @@ def corredorPoltrona():
         corredorPoltrona = corredorPoltrona()
     return corredorPoltrona
 
-# Uma poltrona disponível retorna False
+def checkOnibusLotadoVazio():
+    numPoltronasDisponiveisCorredor = len(listaCorredor)
+    numPoltronasDisponiveisJanela = len(listaJanela)
+
+    for i in listaJanela:
+        if i[1] == True:
+            numPoltronasDisponiveisJanela -= 1
+    for i in listaCorredor:
+        if i[1] == True:
+            numPoltronasDisponiveisCorredor -= 1
+
+    if numPoltronasDisponiveisJanela == 0 and numPoltronasDisponiveisCorredor == 0:
+        return True
+    elif numPoltronasDisponiveisJanela == len(listaJanela) and numPoltronasDisponiveisCorredor == len(listaCorredor):
+        return False
+    else:
+        return None
+
 # Uma poltrona ocupada retorna True
+# Uma poltrona disponível retorna False
 for poltrona in range (0, 24):
-    listaJanela.append((poltrona, False))
-    listaCorredor.append((poltrona, False))
+    listaJanela.append((poltrona, True))
+    listaCorredor.append((poltrona, True))
 
 #######################################################
 
 print("Seja bem-vindo ao sistema de reserva da FOGUETE\n")
 while continuar == True:
+
     opcao = mostrarMenu()
+
     if opcao == 1:
-
-        tamanhoListaCorredor = numPoltronasDisponiveisCorredor = len(listaCorredor)
-        tamanhoListaJanela = numPoltronasDisponiveisJanela = len(listaJanela)
-
-        for i in listaJanela:
-            if i[1] == True:
-                numPoltronasDisponiveisJanela -= 1
-        for i in listaCorredor:
-            if i[1] == True:
-                numPoltronasDisponiveisCorredor -= 1
-
-        if numPoltronasDisponiveisJanela == 0 and numPoltronasDisponiveisCorredor == 0:
-            print("Ônibus lotado. Opção inválida!")
+        onibusLotado = checkOnibusLotadoVazio()
+        if onibusLotado:
+            print("Ônibus lotado!\n")
+            continue;
         else:
             corredorPol = corredorPoltrona()
             numeroPol = numeroPoltrona()
             if corredorPol == 1:
-                if listaCorredor[numeroPol] == (numeroPol, True):
+                if listaCorredor[numeroPol] == [numeroPol, True]:
                     print("Poltrona ocupada. Venda não realizada!\n")
                 else:
                     listaCorredor[numeroPol] = [numeroPol, True]
                     print("Venda realizada com sucesso!\n")
+            elif corredorPol == 2:
+                if listaJanela[numeroPol] == [numeroPol, True]:
+                    print("Poltrona ocupada. Venda não realizada!\n")
+                else:
+                    listaJanela[numeroPol] = [numeroPol, True]
+                    print("Venda realizada com sucesso!\n")
+
+    elif opcao == 2:
+        onibusLotado = checkOnibusLotadoVazio()
+        if onibusLotado is False:
+            print("Ônibus vazio!\n")
+            continue
+        else:
+            corredorPol = corredorPoltrona()
+            numeroPol = numeroPoltrona()
+            if corredorPol == 1:
+                if listaCorredor[numeroPol] == [numeroPol, False]:
+                    print("Poltrona livre. Cancelamento não realizado!\n")
+                else:
+                    listaCorredor[numeroPol] = [numeroPol, False]
+                    print("Cancelamento realizado com sucesso!\n")
+            elif corredorPol == 2:
+                if listaJanela[numeroPol] == [numeroPol, False]:
+                    print("Poltrona livre. Cancelamento não realizado!\n")
+                else:
+                    listaJanela[numeroPol] = [numeroPol, False]
+                    print("Cancelamento realizado com sucesso!\n")
+
+    elif opcao == 3:
+        print("\nJANELA")
+        for poltrona in listaJanela:
+            if poltrona[1] == True:
+                print(f"{poltrona[0] + 1} - Ocupado")
+            elif poltrona[1] == False:
+                print(f"{poltrona[0] + 1} - Livre")
+        print("\n", end="")
+
+        print("CORREDOR")
+        for poltrona in listaCorredor:
+            if poltrona[1] == True:
+                print(f"{poltrona[0] + 1} - Ocupado")
+            elif poltrona[1] == False:
+                print(f"{poltrona[0] + 1} - Livre")
+        print("\n", end="")
+
+    elif opcao == 4:
+        print("Até logo!")
+        continuar = False
 
